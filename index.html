@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abad Ferreira Advocacia - A Solução para o seu Negócio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#152033',secondary:'#E3FF8E'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Raleway', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.hero-section {
+background-image: linear-gradient(rgba(73, 81, 97, 0.7), rgba(73, 81, 97, 0.7)), url('https://readdy.ai/api/search-image?query=modern%20minimalist%20law%20office%20interior%20with%20elegant%20furniture%2C%20clean%20lines%2C%20neutral%20colors%2C%20large%20windows%20with%20natural%20light%2C%20sophisticated%20atmosphere%2C%20professional%20environment%2C%20high-end%20design%2C%20contemporary%20architectural%20elements%2C%20spacious%20layout&width=1920&height=1080&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.service-card:hover .service-description {
+opacity: 1;
+transform: translateY(0);
+}
+.service-description {
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #7B9EE0;
+}
+</style>
+</head>
+<body class="min-h-screen bg-gray-50">
+<!-- Navegação -->
+<nav class="fixed w-full z-50 bg-transparent transition-all duration-300" id="navbar">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-white text-2xl font-['Playfair_Display'] font-bold">Abad Ferreira <span class="text-secondary">Advocacia</span></a>
+<div class="hidden md:flex space-x-8">
+<a href="#sobre" class="text-white hover:text-secondary transition-colors">Sobre Nós</a>
+<a href="#servicos" class="text-white hover:text-secondary transition-colors">Serviços</a>
+<a href="#missao" class="text-white hover:text-secondary transition-colors">Missão & Valores</a>
+<a href="#contato" class="text-white hover:text-secondary transition-colors">Contato</a>
+</div>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-white ri-2x"></i>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section w-full h-screen flex items-center">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-6xl font-bold text-white mb-6">A Solução para o seu Negócio</h1>
+<p class="text-xl text-gray-100 mb-8">Soluções jurídicas personalizadas para os desafios do seu negócio, com excelência e resultados comprovados.</p>
+<a href="#contato" class="bg-secondary text-primary px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 inline-block whitespace-nowrap">Fale Conosco</a>
+</div>
+</div>
+</section>
+<!-- Sobre Nós -->
+<section id="sobre" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Sobre Nós</h2>
+<div class="w-24 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<p class="text-lg leading-relaxed mb-6">
+Atuamos com foco na excelência, proporcionando soluções jurídicas que têm gerado resultados significativos e duradouros para nossos clientes. Na Abad Ferreira Advocacia, trabalhamos em parceria com nossos clientes para desenhar estratégias que resolvem desafios jurídicos complexos, trazendo resultados expressivos e contribuindo para o crescimento sustentável de seus negócios.
+</p>
+<h3 class="text-2xl font-bold text-primary mb-4">Nossa História</h3>
+<p class="text-lg leading-relaxed mb-6">
+Fundada por Leonardo Abad, nossa equipe oferece consultoria especializada em tributação e gestão de contratos, sempre focando nos objetivos do cliente. Com mais de 20 anos de experiência no mercado, construímos uma reputação baseada na confiança e nos resultados que entregamos.
+</p>
+<div class="bg-gray-50 p-6 rounded-lg border-l-4 border-secondary">
+<p class="italic text-gray-700">
+"Nosso compromisso é oferecer soluções jurídicas inovadoras que realmente façam diferença para nossos clientes."
+</p>
+<p class="font-medium text-primary mt-2">— Dr. Leonardo Abad, Fundador</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://abadferreira.com.br/wp-content/uploads/2024/10/pexels-photo-2147288.jpeg">
+</div>
+</div>
+</div>
+</section>
+<!-- Nossos Serviços -->
+<section id="servicos" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções jurídicas completas para proteger e impulsionar o seu negócio.</p>
+<div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Serviço 1 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-bank-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Consultoria Tributária</h3>
+<p class="text-gray-600 mb-4">Orientação especializada para otimização fiscal e conformidade tributária.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Consultoria Tributária</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Planejamento tributário estratégico</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Recuperação de créditos fiscais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Consultoria em impostos diretos e indiretos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Defesa em processos administrativos fiscais</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Serviço 2 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-file-list-3-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Gestão de Contratos</h3>
+<p class="text-gray-600 mb-4">Elaboração e análise de contratos para proteger seus interesses comerciais.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Gestão de Contratos</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Elaboração de contratos comerciais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Análise e revisão de documentos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Negociação de termos contratuais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Gestão de riscos contratuais</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Serviço 3 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-scales-3-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Litígios Complexos</h3>
+<p class="text-gray-600 mb-4">Representação jurídica especializada em disputas empresariais complexas.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Litígios Complexos</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Disputas societárias</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Litígios contratuais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Recuperação judicial e falência</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Arbitragem comercial</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Serviço 4 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-basketball-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Direito Esportivo</h3>
+<p class="text-gray-600 mb-4">Assessoria jurídica especializada para atletas, clubes e entidades esportivas.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Direito Esportivo</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Contratos de atletas profissionais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Direitos de imagem e patrocínio</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Representação em tribunais esportivos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Consultoria para clubes e federações</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Missão e Valores -->
+<section id="missao" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Missão -->
+<div class="md:w-1/2 bg-primary rounded-lg p-10 text-white">
+<div class="w-16 h-16 bg-white bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-flag-line text-secondary ri-2x"></i>
+</div>
+<h2 class="text-3xl font-bold mb-6">Nossa Missão</h2>
+<p class="text-lg leading-relaxed">
+Nossa Missão é facilitar a busca pela justiça, oferecendo consultoria jurídica inovadora e personalizada para cada cliente. Buscamos ser um parceiro estratégico, compreendendo profundamente as necessidades de cada negócio para entregar soluções que realmente façam diferença.
+</p>
+<div class="w-20 h-1 bg-secondary mt-8"></div>
+</div>
+<!-- Valores -->
+<div class="md:w-1/2">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-heart-line text-primary ri-2x"></i>
+</div>
+<h2 class="text-3xl font-bold text-primary mb-6">Nossos Valores</h2>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-check-double-line text-primary ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">Comprometimento</h3>
+<p class="text-gray-600">Dedicação total aos interesses e objetivos de nossos clientes, buscando sempre os melhores resultados.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-eye-line text-primary ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">Transparência</h3>
+<p class="text-gray-600">Comunicação clara e honesta em todos os aspectos de nosso relacionamento com clientes e parceiros.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-team-line text-primary ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">Parceria</h3>
+<p class="text-gray-600">Construção de relacionamentos de confiança e colaboração de longo prazo com nossos clientes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold text-primary mb-6">Pronto para transformar seus desafios jurídicos em oportunidades?</h2>
+<p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Entre em contato hoje mesmo e descubra como podemos ajudar seu negócio a prosperar com segurança jurídica.</p>
+<a href="#contato" class="bg-secondary text-primary px-10 py-4 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 inline-block text-lg whitespace-nowrap">Fale Conosco</a>
+</div>
+</section>
+<!-- Contato -->
+<section id="contato" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Entre em Contato</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Estamos prontos para ouvir suas necessidades e oferecer as melhores soluções jurídicas para o seu negócio.</p>
+<div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/2">
+<form class="space-y-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Nome Completo</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu nome completo">
+</div>
+<div>
+<label for="email" class="block text-gray-700 mb-2">E-mail</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu e-mail">
+</div>
+<div>
+<label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu telefone">
+</div>
+<div>
+<label for="service" class="block text-gray-700 mb-2">Serviço de Interesse</label>
+<div class="relative">
+<select id="service" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary appearance-none pr-8">
+<option value="" disabled selected>Selecione um serviço</option>
+<option value="tributario">Consultoria Tributária</option>
+<option value="contratos">Gestão de Contratos</option>
+<option value="litigios">Litígios Complexos</option>
+<option value="esportivo">Direito Esportivo</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Descreva sua necessidade"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Enviar Mensagem</button>
+</form>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-50 p-8 rounded-lg h-full">
+<h3 class="text-2xl font-bold text-primary mb-6">Informações de Contato</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+<p class="text-gray-600">SÃO PAULO | Parque da Cidade<br>Av. Nações Unidas, 14.401, 23.º Andar - 2304</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+<p class="text-gray-600">+55 (11) 3181-4325</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">E-mail</h4>
+<p class="text-gray-600">contato@abadferreira.com.br</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-bold text-gray-800 mb-4">Siga-nos</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-opacity-90 transition-all">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-opacity-90 transition-all">
+<i class="ri-instagram-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-opacity-90 transition-all">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-opacity-90 transition-all">
+<i class="ri-twitter-x-fill"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-2xl font-bold mb-6">Abad Ferreira <span class="text-secondary">Advocacia</span></h3>
+<p class="mb-6">Soluções jurídicas inovadoras para os desafios do seu negócio, com excelência e resultados comprovados.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-6">Links Rápidos</h4>
+<ul class="space-y-3">
+<li><a href="#sobre" class="hover:text-secondary transition-colors">Sobre Nós</a></li>
+<li><a href="#servicos" class="hover:text-secondary transition-colors">Nossos Serviços</a></li>
+<li><a href="#missao" class="hover:text-secondary transition-colors">Missão & Valores</a></li>
+<li><a href="#contato" class="hover:text-secondary transition-colors">Contato</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Política de Privacidade</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Termos de Uso</a></li>
+</ul>
+</div>
+
+</div>
+<div class="border-t border-gray-700 mt-12 pt-6 text-center">
+<p>&copy; 2025 Abad Ferreira Advocacia. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+navbar.classList.remove('bg-transparent');
+navbar.classList.add('bg-primary', 'shadow-md');
+} else {
+navbar.classList.add('bg-transparent');
+navbar.classList.remove('bg-primary', 'shadow-md');
+}
+});
+// Trigger the scroll event on page load
+window.dispatchEvent(new Event('scroll'));
+});
+</script>
+</body>
+</html>
