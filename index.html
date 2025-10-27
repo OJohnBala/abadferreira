@@ -1,236 +1,315 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head><script src="https://static.readdy.ai/static/e.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Star Crude Oil</title>
-<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>tailwind.config={theme:{extend:{colors:{primary:'#1e3a5f',secondary:'#d4af37'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<title>Abad Ferreira Advocacia - A Solução para o seu Negócio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#152033',secondary:'#E3FF8E'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
-.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
-.hero-bg { background-image: url('https://readdy.ai/api/search-image?query=Modern%20oil%20refinery%20industrial%20facility%20with%20blue%20steel%20structures%20and%20golden%20sunset%20lighting%2C%20professional%20corporate%20background%20with%20clean%20white%20space%20on%20left%20side%20for%20text%20overlay%2C%20high%20contrast%20industrial%20photography&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center; }
-.gradient-gold { background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%); }
-.text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-.card-hover { transition: all 0.3s ease; }
-.card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-.language-selector { display: none; }
-.language-selector.active { display: block; }
+body {
+font-family: 'Raleway', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.hero-section {
+background-image: linear-gradient(rgba(73, 81, 97, 0.7), rgba(73, 81, 97, 0.7)), url('https://readdy.ai/api/search-image?query=modern%20minimalist%20law%20office%20interior%20with%20elegant%20furniture%2C%20clean%20lines%2C%20neutral%20colors%2C%20large%20windows%20with%20natural%20light%2C%20sophisticated%20atmosphere%2C%20professional%20environment%2C%20high-end%20design%2C%20contemporary%20architectural%20elements%2C%20spacious%20layout&width=1920&height=1080&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.service-card:hover .service-description {
+opacity: 1;
+transform: translateY(0);
+}
+.service-description {
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #7B9EE0;
+}
 </style>
 </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQWG8457HS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JQWG8457HS');
-</script>
-<body class="bg-white text-gray-800 font-sans">
-<header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
-<nav class="w-full px-6 py-4">
-<div class="flex items-center justify-between">
-<div class="flex items-center">
-<h1 class="text-2xl font-['Pacifico'] text-primary">Star Crude Oil</h1>
+<body class="min-h-screen bg-gray-50">
+<!-- Navegação -->
+<nav class="fixed w-full z-50 bg-transparent transition-all duration-300" id="navbar">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-white text-2xl font-['Playfair_Display'] font-bold">Abad Ferreira <span class="text-secondary">Advocacia</span></a>
+<div class="hidden md:flex space-x-8">
+<a href="#sobre" class="text-white hover:text-secondary transition-colors">Sobre Nós</a>
+<a href="#servicos" class="text-white hover:text-secondary transition-colors">Serviços</a>
+<a href="#missao" class="text-white hover:text-secondary transition-colors">Missão & Valores</a>
+<a href="#contato" class="text-white hover:text-secondary transition-colors">Contato</a>
 </div>
-<div class="hidden md:flex items-center space-x-8">
-<a href="#home" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Home</a>
-<a href="#sobre" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Sobre</a>
-<a href="#servicos" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Serviços</a>
-<a href="#mercados" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Mercados</a>
-<a href="#contato" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Contato</a>
-</div>
-<div class="relative">
-<button id="language-toggle" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors duration-300">
-<img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=br-flag&orientation=landscape" alt="PT" class="w-6 h-4 object-cover rounded-sm">
-<span class="text-sm font-medium">PT</span>
-<div class="w-4 h-4 flex items-center justify-center">
-<i class="ri-arrow-down-s-line"></i>
-</div>
-</button>
-<div id="language-dropdown" class="language-selector absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg">
-<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
-<span class="text-sm">Português</span>
-</a>
-<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
-<span class="text-sm">English</span>
-</a>
-<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
-<span class="text-sm">Español</span>
-</a>
-</div>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-white ri-2x"></i>
 </div>
 </div>
 </nav>
-</header>
-<main>
-<section id="home" class="hero-bg min-h-screen flex items-center relative">
-<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
-<div class="w-full px-6 relative z-10">
-<div class="max-w-7xl mx-auto">
-<div class="max-w-2xl fade-in">
-<h1 class="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-Star Crude Oil
-</h1>
-<p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-Consultoria especializada em petróleo e gás com mais de 10 anos de experiência em intermediações de infraestruturas, equipamentos e M&A
+<!-- Hero Section -->
+<section class="hero-section w-full h-screen flex items-center">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-6xl font-bold text-white mb-6">A Solução para o seu Negócio</h1>
+<p class="text-xl text-gray-100 mb-8">Soluções jurídicas personalizadas para os desafios do seu negócio, com excelência e resultados comprovados.</p>
+<a href="#contato" class="bg-secondary text-primary px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 inline-block whitespace-nowrap">Fale Conosco</a>
+</div>
+</div>
+</section>
+<!-- Sobre Nós -->
+<section id="sobre" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Sobre Nós</h2>
+<div class="w-24 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<p class="text-lg leading-relaxed mb-6">
+Atuamos com foco na excelência, proporcionando soluções jurídicas que têm gerado resultados significativos e duradouros para nossos clientes. Na Abad Ferreira Advocacia, trabalhamos em parceria com nossos clientes para desenhar estratégias que resolvem desafios jurídicos complexos, trazendo resultados expressivos e contribuindo para o crescimento sustentável de seus negócios.
 </p>
-<button class="gradient-gold text-white px-8 py-4 !rounded-button text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap">
-Conheça Nossos Serviços
-</button>
+<h3 class="text-2xl font-bold text-primary mb-4">Nossa História</h3>
+<p class="text-lg leading-relaxed mb-6">
+Fundada por Leonardo Abad, nossa equipe oferece consultoria especializada em tributação e gestão de contratos, sempre focando nos objetivos do cliente. Com mais de 20 anos de experiência no mercado, construímos uma reputação baseada na confiança e nos resultados que entregamos.
+</p>
+<div class="bg-gray-50 p-6 rounded-lg border-l-4 border-secondary">
+<p class="italic text-gray-700">
+"Nosso compromisso é oferecer soluções jurídicas inovadoras que realmente façam diferença para nossos clientes."
+</p>
+<p class="font-medium text-primary mt-2">— Dr. Leonardo Abad, Fundador</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="abadferreira_image_01.jpeg" alt="Equipe Abad Ferreira Advocacia" class="rounded-lg shadow-xl w-full h-auto object-cover object-top">
 </div>
 </div>
 </div>
 </section>
-<section id="sobre" class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div class="fade-in">
-<h2 class="text-4xl font-bold text-primary mb-6">Sobre a Star Crude Oil</h2>
-<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, fundada pelo empresário português José Almeida Santos, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.
-</p>
-<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.
-</p>
-<p class="text-lg text-gray-700 leading-relaxed">
-Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional de nossos clientes.
-</p>
-</div>
-<div class="fade-in">
-<img src="https://readdy.ai/api/search-image?query=Professional%20oil%20and%20gas%20consulting%20team%20in%20modern%20office%20environment%20with%20industrial%20equipment%20blueprints%20and%20digital%20displays%20showing%20petroleum%20infrastructure%20projects%2C%20corporate%20business%20atmosphere%20with%20blue%20and%20gold%20accents&width=600&height=400&seq=about-img&orientation=landscape" alt="Sobre a empresa" class="w-full h-96 object-cover rounded-xl shadow-lg">
-</div>
-</div>
-</div>
-</section>
-<section id="servicos" class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16 fade-in">
+<!-- Nossos Serviços -->
+<section id="servicos" class="py-20 bg-gray-50 relative">
+<div class="absolute inset-0 bg-cover bg-center opacity-5" style="background-image: url('https://static.readdy.ai/image/4faad7b4b0e4c8e026b7dcd04c2ad1ec/d55421e1cf22c90b276515996f2073b2.jfif');"></div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
 <h2 class="text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
-<p class="text-xl text-gray-600 max-w-3xl mx-auto">
-Oferecemos soluções especializadas para impulsionar seu negócio no setor de petróleo e gás
-</p>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções jurídicas completas para proteger e impulsionar o seu negócio.</p>
+<div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
-<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
-<i class="ri-building-line text-2xl text-primary"></i>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Serviço 1 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-bank-line text-primary ri-2x"></i>
 </div>
-<h3 class="text-2xl font-bold text-primary mb-4">Intermediação de Infraestruturas</h3>
-<p class="text-gray-700 leading-relaxed">
-Facilitamos conexões estratégicas para projetos de infraestrutura petrolífera, desde refinarias até terminais de distribuição, garantindo eficiência e conformidade regulatória.
-</p>
+<h3 class="text-2xl font-bold text-primary mb-4">Consultoria Tributária</h3>
+<p class="text-gray-600 mb-4">Orientação especializada para otimização fiscal e conformidade tributária.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Consultoria Tributária</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Planejamento tributário estratégico</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Recuperação de créditos fiscais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Consultoria em impostos diretos e indiretos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Defesa em processos administrativos fiscais</span>
+</li>
+</ul>
 </div>
-<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
-<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
-<i class="ri-settings-3-line text-2xl text-primary"></i>
 </div>
-<h3 class="text-2xl font-bold text-primary mb-4">Equipamentos Especializados</h3>
-<p class="text-gray-700 leading-relaxed">
-Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.
-</p>
+<!-- Serviço 2 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-file-list-3-line text-primary ri-2x"></i>
 </div>
-<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
-<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
-<i class="ri-handshake-line text-2xl text-primary"></i>
+<h3 class="text-2xl font-bold text-primary mb-4">Gestão de Contratos</h3>
+<p class="text-gray-600 mb-4">Elaboração e análise de contratos para proteger seus interesses comerciais.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Gestão de Contratos</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Elaboração de contratos comerciais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Análise e revisão de documentos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Negociação de termos contratuais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Gestão de riscos contratuais</span>
+</li>
+</ul>
 </div>
-<h3 class="text-2xl font-bold text-primary mb-4">M&A (Fusões e Aquisições)</h3>
-<p class="text-gray-700 leading-relaxed">
-Assessoramos em operações de fusões e aquisições no setor energético, proporcionando análises estratégicas e facilitando negociações que maximizam valor e oportunidades.
-</p>
+</div>
+<!-- Serviço 3 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-scales-3-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Litígios Complexos</h3>
+<p class="text-gray-600 mb-4">Representação jurídica especializada em disputas empresariais complexas.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Litígios Complexos</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Disputas societárias</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Litígios contratuais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Recuperação judicial e falência</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Arbitragem comercial</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Serviço 4 -->
+<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden service-card group h-96">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-basketball-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Direito Esportivo</h3>
+<p class="text-gray-600 mb-4">Assessoria jurídica especializada para atletas, clubes e entidades esportivas.</p>
+<div class="service-description absolute inset-0 bg-primary bg-opacity-95 p-8 flex flex-col justify-center text-white">
+<h3 class="text-2xl font-bold mb-4">Direito Esportivo</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Contratos de atletas profissionais</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Direitos de imagem e patrocínio</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Representação em tribunais esportivos</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mr-2 mt-1"></i>
+<span>Consultoria para clubes e federações</span>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 </section>
-<section id="mercados" class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16 fade-in">
-<h2 class="text-4xl font-bold text-primary mb-4">Nossos Mercados</h2>
-<p class="text-xl text-gray-600 max-w-3xl mx-auto">
-Presença estratégica em mercados-chave da América Latina e Europa
+<!-- Experiência e Resultados -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<img src="abadferreira_image_02.jpeg" alt="Plataforma petrolífera offshore - Representando nossa experiência em grandes projetos" class="rounded-xl shadow-2xl w-full h-auto object-cover object-top">
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-bold text-primary mb-6">Experiência em Grandes Projetos</h2>
+<div class="w-24 h-1 bg-secondary mb-8"></div>
+<p class="text-lg leading-relaxed mb-8 text-gray-700">
+Nossa experiência abrange desde pequenas empresas até grandes corporações e projetos de infraestrutura. Temos o conhecimento e a capacidade para lidar com os desafios jurídicos mais complexos do mercado brasileiro e internacional.
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-trophy-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">20+ Anos</h3>
+<p class="text-gray-600">De experiência no mercado jurídico</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-building-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">500+ Clientes</h3>
+<p class="text-gray-600">Atendidos com excelência</p>
+</div>
+</div>
+<div class="bg-secondary bg-opacity-10 border-l-4 border-secondary p-6 rounded-r-lg">
+<p class="text-gray-700 italic">
+"Nosso diferencial está na capacidade de compreender as complexidades de cada setor e entregar soluções jurídicas que realmente impactam os resultados dos nossos clientes."
 </p>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=brazil-flag&orientation=landscape" alt="Brasil" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Brasil</h3>
-<p class="text-sm text-gray-600">Maior mercado de atuação com foco no pré-sal e refino</p>
-</div>
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://raw.githubusercontent.com/OJohnBala/starcrudeoil/refs/heads/main/ecuador.jpg" alt="Equador" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Equador</h3>
-<p class="text-sm text-gray-600">Projetos de exploração e infraestrutura</p>
-</div>
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://github.com/OJohnBala/starcrudeoil/blob/main/colombia.jpg?raw=true" alt="Colômbia" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Colômbia</h3>
-<p class="text-sm text-gray-600">Intermediação em campos offshore e onshore</p>
-</div>
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://readdy.ai/api/search-image?query=Portugal%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=portugal-flag&orientation=landscape" alt="Portugal" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Portugal</h3>
-<p class="text-sm text-gray-600">Gateway europeu para negócios energéticos</p>
-</div>
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://raw.githubusercontent.com/OJohnBala/starcrudeoil/refs/heads/main/spain.jpg" alt="Espanha" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Espanha</h3>
-<p class="text-sm text-gray-600">Refinarias e distribuição no mercado ibérico</p>
 </div>
 </div>
 </div>
 </section>
-<section id="contato" class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16 fade-in">
-<h2 class="text-4xl font-bold text-primary mb-4">Entre em Contato</h2>
-<p class="text-xl text-gray-600 max-w-3xl mx-auto">
-Estamos prontos para discutir suas necessidades e oportunidades no setor de petróleo e gás
-</p>
+<!-- Missão e Valores -->
+<section id="missao" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Missão -->
+<div class="md:w-1/2 bg-primary rounded-lg p-10 text-white">
+<div class="w-16 h-16 bg-white bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-flag-line text-secondary ri-2x"></i>
 </div>
-<div class="max-w-2xl mx-auto">
-<div class="fade-in">
-<h3 class="text-2xl font-bold text-primary mb-6 text-center">Informações de Contato</h3>
+<h2 class="text-3xl font-bold mb-6">Nossa Missão</h2>
+<p class="text-lg leading-relaxed">
+Nossa Missão é facilitar a busca pela justiça, oferecendo consultoria jurídica inovadora e personalizada para cada cliente. Buscamos ser um parceiro estratégico, compreendendo profundamente as necessidades de cada negócio para entregar soluções que realmente façam diferença.
+</p>
+<div class="w-20 h-1 bg-secondary mt-8"></div>
+</div>
+<!-- Valores -->
+<div class="md:w-1/2">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-heart-line text-primary ri-2x"></i>
+</div>
+<h2 class="text-3xl font-bold text-primary mb-6">Nossos Valores</h2>
 <div class="space-y-6">
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
-<i class="ri-map-pin-line text-xl text-primary"></i>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-check-double-line text-primary ri-lg"></i>
 </div>
 <div>
-<h4 class="font-semibold text-primary mb-1">Endereço</h4>
-<p class="text-gray-700">Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - 01310-100</p>
+<h3 class="text-xl font-bold text-primary mb-2">Comprometimento</h3>
+<p class="text-gray-600">Dedicação total aos interesses e objetivos de nossos clientes, buscando sempre os melhores resultados.</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
-<i class="ri-phone-line text-xl text-primary"></i>
-</div>
-<div>
-<h4 class="font-semibold text-primary mb-1">Telefone</h4>
-<p class="text-gray-700">+55 (11) 3181-4325</p>
-</div>
-</div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
-<i class="ri-mail-line text-xl text-primary"></i>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-eye-line text-primary ri-lg"></i>
 </div>
 <div>
-<h4 class="font-semibold text-primary mb-1">Email</h4>
-<p class="text-gray-700">info@starcrudeoil.com</p>
+<h3 class="text-xl font-bold text-primary mb-2">Transparência</h3>
+<p class="text-gray-600">Comunicação clara e honesta em todos os aspectos de nosso relacionamento com clientes e parceiros.</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
-<i class="ri-global-line text-xl text-primary"></i>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-team-line text-primary ri-lg"></i>
 </div>
 <div>
-<h4 class="font-semibold text-primary mb-1">Website</h4>
-<p class="text-gray-700">www.starcrudeoil.com</p>
+<h3 class="text-xl font-bold text-primary mb-2">Parceria</h3>
+<p class="text-gray-600">Construção de relacionamentos de confiança e colaboração de longo prazo com nossos clientes.</p>
 </div>
 </div>
 </div>
@@ -238,367 +317,148 @@ Estamos prontos para discutir suas necessidades e oportunidades no setor de petr
 </div>
 </div>
 </section>
-</main>
+<!-- CTA Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold text-primary mb-6">Pronto para transformar seus desafios jurídicos em oportunidades?</h2>
+<p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Entre em contato hoje mesmo e descubra como podemos ajudar seu negócio a prosperar com segurança jurídica.</p>
+<a href="#contato" class="bg-secondary text-primary px-10 py-4 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 inline-block text-lg whitespace-nowrap">Fale Conosco</a>
+</div>
+</section>
+<!-- Contato -->
+<section id="contato" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Entre em Contato</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Estamos prontos para ouvir suas necessidades e oferecer as melhores soluções jurídicas para o seu negócio.</p>
+<div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/2">
+<form class="space-y-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Nome Completo</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu nome completo">
+</div>
+<div>
+<label for="email" class="block text-gray-700 mb-2">E-mail</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu e-mail">
+</div>
+<div>
+<label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Seu telefone">
+</div>
+<div>
+<label for="service" class="block text-gray-700 mb-2">Serviço de Interesse</label>
+<div class="relative">
+<select id="service" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary appearance-none pr-8">
+<option value="" disabled selected>Selecione um serviço</option>
+<option value="tributario">Consultoria Tributária</option>
+<option value="contratos">Gestão de Contratos</option>
+<option value="litigios">Litígios Complexos</option>
+<option value="esportivo">Direito Esportivo</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Descreva sua necessidade"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Enviar Mensagem</button>
+</form>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-50 p-8 rounded-lg h-full">
+<h3 class="text-2xl font-bold text-primary mb-6">Informações de Contato</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+<p class="text-gray-600">Av. Nações Unidas, 14401, 23 Andar<br>São Paulo-SP|Brasil</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+<p class="text-gray-600">+55 (11) 3181-4325</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">E-mail</h4>
+<p class="text-gray-600">contato@abadferreira.adv.br</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
 <footer class="bg-primary text-white py-12">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid md:grid-cols-4 gap-8">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <div>
-<h3 class="text-2xl font-['Pacifico'] mb-4">Star Crude Oil</h3>
-<p class="text-gray-300 mb-4">
-Consultoria especializada em petróleo e gás com mais de 10 anos de experiência no mercado.
-</p>
-<p class="text-gray-300 text-sm">www.starcrudeoil.com</p>
+<h3 class="text-2xl font-bold mb-6">Abad Ferreira <span class="text-secondary">Advocacia</span></h3>
+<p class="mb-6">Soluções jurídicas inovadoras para os desafios do seu negócio, com excelência e resultados comprovados.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="text-white hover:text-secondary transition-colors">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+</div>
 </div>
 <div>
-<h4 class="text-lg font-semibold mb-4">Serviços</h4>
-<ul class="space-y-2 text-gray-300">
-<li>Intermediação de Infraestruturas</li>
-<li>Equipamentos Especializados</li>
-<li>M&A (Fusões e Aquisições)</li>
-<li>Consultoria Estratégica</li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Mercados</h4>
-<ul class="space-y-2 text-gray-300">
-<li>Brasil</li>
-<li>Equador</li>
-<li>Colômbia</li>
-<li>Portugal</li>
-<li>Espanha</li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Contato</h4>
-<ul class="space-y-2 text-gray-300">
-<li>+55 (11) 3181-4325</li>
-<li>contato@starcrudeoil.com</li>
-<li>São Paulo, SP - Brasil</li>
+<h4 class="text-xl font-bold mb-6">Links Rápidos</h4>
+<ul class="space-y-3">
+<li><a href="#sobre" class="hover:text-secondary transition-colors">Sobre Nós</a></li>
+<li><a href="#servicos" class="hover:text-secondary transition-colors">Nossos Serviços</a></li>
+<li><a href="#missao" class="hover:text-secondary transition-colors">Missão & Valores</a></li>
+<li><a href="#contato" class="hover:text-secondary transition-colors">Contato</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Política de Privacidade</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Termos de Uso</a></li>
 </ul>
 </div>
 </div>
-<div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-<p>&copy; 2024 Star Crude Oil. Todos os direitos reservados.</p>
+<div class="border-t border-gray-700 mt-12 pt-6 text-center">
+<p>&copy; 2025 Abad Ferreira Advocacia. Todos os direitos reservados.</p>
 </div>
 </div>
 </footer>
-<script id="fade-in-animation">
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-const observerOptions = {
-threshold: 0.1,
-rootMargin: '0px 0px -50px 0px'
-};
-const observer = new IntersectionObserver(function(entries) {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('visible');
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+navbar.classList.remove('bg-transparent');
+navbar.classList.add('bg-primary', 'shadow-md');
+} else {
+navbar.classList.add('bg-transparent');
+navbar.classList.remove('bg-primary', 'shadow-md');
 }
 });
-}, observerOptions);
-document.querySelectorAll('.fade-in').forEach(el => {
-observer.observe(el);
-});
+// Trigger the scroll event on page load
+window.dispatchEvent(new Event('scroll'));
 });
 </script>
-<script id="language-selector">
-document.addEventListener('DOMContentLoaded', function() {
-const languageToggle = document.getElementById('language-toggle');
-const languageDropdown = document.getElementById('language-dropdown');
-const translations = {
-pt: {
-nav: {
-home: 'Home',
-about: 'Sobre',
-services: 'Serviços',
-markets: 'Mercados',
-contact: 'Contato'
-},
-hero: {
-title: 'Star Crude Oil',
-subtitle: 'Consultoria especializada em petróleo e gás com mais de 10 anos de experiência em intermediações de infraestruturas, equipamentos e M&A',
-cta: 'Conheça Nossos Serviços'
-},
-about: {
-title: 'Sobre a Star Crude Oil',
-p1: 'Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.',
-p2: 'Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.',
-p3: 'Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional de nossos clientes.'
-},
-services: {
-title: 'Nossos Serviços',
-subtitle: 'Oferecemos soluções especializadas para impulsionar seu negócio no setor de petróleo e gás',
-service1: {
-title: 'Intermediação de Infraestruturas',
-desc: 'Facilitamos conexões estratégicas para projetos de infraestrutura petrolífera, desde refinarias até terminais de distribuição, garantindo eficiência e conformidade regulatória.'
-},
-service2: {
-title: 'Equipamentos Especializados',
-desc: 'Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.'
-},
-service3: {
-title: 'M&A (Fusões e Aquisições)',
-desc: 'Assessoramos em operações de fusões e aquisições no setor energético, proporcionando análises estratégicas e facilitando negociações que maximizam valor e oportunidades.'
-}
-},
-markets: {
-title: 'Nossos Mercados',
-subtitle: 'Presença estratégica em mercados-chave da América Latina e Europa',
-brazil: 'Maior mercado de atuação com foco no pré-sal e refino',
-ecuador: 'Projetos de exploração e infraestrutura amazônica',
-colombia: 'Intermediação em campos offshore e onshore',
-portugal: 'Gateway europeu para negócios energéticos',
-spain: 'Refinarias e distribuição no mercado ibérico'
-},
-contact: {
-title: 'Entre em Contato',
-subtitle: 'Estamos prontos para discutir suas necessidades e oportunidades no setor de petróleo e gás',
-info: 'Informações de Contato',
-address: 'Endereço',
-phone: 'Telefone',
-email: 'Email',
-website: 'Website'
-},
-footer: {
-description: 'Consultoria especializada em petróleo e gás com mais de 10 anos de experiência no mercado.',
-services: 'Serviços',
-markets: 'Mercados',
-contact: 'Contato',
-rights: 'Todos os direitos reservados.'
-}
-},
-en: {
-nav: {
-home: 'Home',
-about: 'About',
-services: 'Services',
-markets: 'Markets',
-contact: 'Contact'
-},
-hero: {
-title: 'Star Crude Oil',
-subtitle: 'Specialized consulting in oil and gas with over 10 years of experience in infrastructure, equipment, and M&A intermediation',
-cta: 'Learn About Our Services'
-},
-about: {
-title: 'About Star Crude Oil',
-p1: 'With over <span class="text-primary font-semibold">10 years of experience</span> in the oil and gas sector, founded by portuguese businessman José Almeida Santos, Star Crude Oil has established itself as a benchmark consultancy in strategic intermediations.',
-p2: 'Our expertise ranges from intermediating complex infrastructures to specialized equipment and mergers and acquisitions (M&A) operations, always focusing on excellence and sustainable results.',
-p3: 'We operate strategically in key markets in Latin America and Europe, offering customized solutions that drive growth and operational efficiency for our clients.'
-},
-services: {
-title: 'Our Services',
-subtitle: 'We offer specialized solutions to boost your business in the oil and gas sector',
-service1: {
-title: 'Infrastructure Intermediation',
-desc: 'We facilitate strategic connections for petroleum infrastructure projects, from refineries to distribution terminals, ensuring efficiency and regulatory compliance.'
-},
-service2: {
-title: 'Specialized Equipment',
-desc: 'We intermediate the acquisition and leasing of high-tech equipment for exploration, refining and distribution, connecting reliable suppliers to your projects.'
-},
-service3: {
-title: 'M&A (Mergers and Acquisitions)',
-desc: 'We advise on mergers and acquisitions operations in the energy sector, providing strategic analysis and facilitating negotiations that maximize value and opportunities.'
-}
-},
-markets: {
-title: 'Our Markets',
-subtitle: 'Strategic presence in key markets in Latin America and Europe',
-brazil: 'Largest operating market with focus on pre-salt and refining',
-ecuador: 'Amazon exploration and infrastructure projects',
-colombia: 'Intermediation in offshore and onshore fields',
-portugal: 'European gateway for energy business',
-spain: 'Refineries and distribution in the Iberian market'
-},
-contact: {
-title: 'Get in Touch',
-subtitle: 'We are ready to discuss your needs and opportunities in the oil and gas sector',
-info: 'Contact Information',
-address: 'Address',
-phone: 'Phone',
-email: 'Email',
-website: 'Website'
-},
-footer: {
-description: 'Specialized consulting in oil and gas with over 10 years of market experience.',
-services: 'Services',
-markets: 'Markets',
-contact: 'Contact',
-rights: 'All rights reserved.'
-}
-},
-es: {
-nav: {
-home: 'Inicio',
-about: 'Acerca',
-services: 'Servicios',
-markets: 'Mercados',
-contact: 'Contacto'
-},
-hero: {
-title: 'Star Crude Oil',
-subtitle: 'Consultoría especializada en petróleo y gas con más de 10 años de experiencia en intermediaciones de infraestructuras, equipos y M&A',
-cta: 'Conozca Nuestros Servicios'
-},
-about: {
-title: 'Acerca de Star Crude Oil',
-p1: 'Con más de <span class="text-primary font-semibold">10 años de experiencia</span> en el sector petrolero y gasífero, fundada por el empresario portugués José Almeida Santos, Star Crude Oil se ha establecido como una consultoría de referencia en intermediaciones estratégicas.',
-p2: 'Nuestra experiencia abarca desde la intermediación de infraestructuras complejas hasta equipos especializados y operaciones de fusiones y adquisiciones (M&A), siempre con enfoque en la excelencia y resultados sostenibles.',
-p3: 'Operamos estratégicamente en mercados clave de América Latina y Europa, ofreciendo soluciones personalizadas que impulsan el crecimiento y la eficiencia operacional de nuestros clientes.'
-},
-services: {
-title: 'Nuestros Servicios',
-subtitle: 'Ofrecemos soluciones especializadas para impulsar su negocio en el sector petrolero y gasífero',
-service1: {
-title: 'Intermediación de Infraestructuras',
-desc: 'Facilitamos conexiones estratégicas para proyectos de infraestructura petrolera, desde refinerías hasta terminales de distribución, garantizando eficiencia y cumplimiento regulatorio.'
-},
-service2: {
-title: 'Equipos Especializados',
-desc: 'Intermediamos la adquisición y arrendamiento de equipos de alta tecnología para exploración, refinación y distribución, conectando proveedores confiables con sus proyectos.'
-},
-service3: {
-title: 'M&A (Fusiones y Adquisiciones)',
-desc: 'Asesoramos en operaciones de fusiones y adquisiciones en el sector energético, proporcionando análisis estratégicos y facilitando negociaciones que maximizan valor y oportunidades.'
-}
-},
-markets: {
-title: 'Nuestros Mercados',
-subtitle: 'Presencia estratégica en mercados clave de América Latina y Europa',
-brazil: 'Mayor mercado de operación con enfoque en pre-sal y refinación',
-ecuador: 'Proyectos de exploración e infraestructura amazónica',
-colombia: 'Intermediación en campos offshore y onshore',
-portugal: 'Puerta de entrada europea para negocios energéticos',
-spain: 'Refinerías y distribución en el mercado ibérico'
-},
-contact: {
-title: 'Póngase en Contacto',
-subtitle: 'Estamos listos para discutir sus necesidades y oportunidades en el sector petrolero y gasífero',
-info: 'Información de Contacto',
-address: 'Dirección',
-phone: 'Teléfono',
-email: 'Email',
-website: 'Sitio Web'
-},
-footer: {
-description: 'Consultoría especializada en petróleo y gas con más de 10 años de experiencia en el mercado.',
-services: 'Servicios',
-markets: 'Mercados',
-contact: 'Contacto',
-rights: 'Todos los derechos reservados.'
-}
-}
-};
-function translatePage(lang) {
-const t = translations[lang];
-// Navigation
-document.querySelector('a[href="#home"]').textContent = t.nav.home;
-document.querySelector('a[href="#sobre"]').textContent = t.nav.about;
-document.querySelector('a[href="#servicos"]').textContent = t.nav.services;
-document.querySelector('a[href="#mercados"]').textContent = t.nav.markets;
-document.querySelector('a[href="#contato"]').textContent = t.nav.contact;
-// Hero section
-document.querySelector('#home h1').textContent = t.hero.title;
-document.querySelector('#home p').textContent = t.hero.subtitle;
-document.querySelector('#home button').textContent = t.hero.cta;
-// About section
-document.querySelector('#sobre h2').textContent = t.about.title;
-const aboutPs = document.querySelectorAll('#sobre p');
-aboutPs[0].innerHTML = t.about.p1;
-aboutPs[1].textContent = t.about.p2;
-aboutPs[2].textContent = t.about.p3;
-// Services section
-document.querySelector('#servicos h2').textContent = t.services.title;
-document.querySelector('#servicos > div > div > p').textContent = t.services.subtitle;
-const serviceCards = document.querySelectorAll('#servicos .card-hover');
-serviceCards[0].querySelector('h3').textContent = t.services.service1.title;
-serviceCards[0].querySelector('p').textContent = t.services.service1.desc;
-serviceCards[1].querySelector('h3').textContent = t.services.service2.title;
-serviceCards[1].querySelector('p').textContent = t.services.service2.desc;
-serviceCards[2].querySelector('h3').textContent = t.services.service3.title;
-serviceCards[2].querySelector('p').textContent = t.services.service3.desc;
-// Markets section
-document.querySelector('#mercados h2').textContent = t.markets.title;
-document.querySelector('#mercados > div > div > p').textContent = t.markets.subtitle;
-const marketCards = document.querySelectorAll('#mercados .card-hover');
-marketCards[0].querySelector('p').textContent = t.markets.brazil;
-marketCards[1].querySelector('p').textContent = t.markets.ecuador;
-marketCards[2].querySelector('p').textContent = t.markets.colombia;
-marketCards[3].querySelector('p').textContent = t.markets.portugal;
-marketCards[4].querySelector('p').textContent = t.markets.spain;
-// Contact section
-document.querySelector('#contato h2').textContent = t.contact.title;
-document.querySelector('#contato > div > div > p').textContent = t.contact.subtitle;
-document.querySelector('#contato h3').textContent = t.contact.info;
-const contactItems = document.querySelectorAll('#contato h4');
-contactItems[0].textContent = t.contact.address;
-contactItems[1].textContent = t.contact.phone;
-contactItems[2].textContent = t.contact.email;
-contactItems[3].textContent = t.contact.website;
-// Footer
-document.querySelector('footer p').textContent = t.footer.description;
-const footerHeaders = document.querySelectorAll('footer h4');
-footerHeaders[0].textContent = t.footer.services;
-footerHeaders[1].textContent = t.footer.markets;
-footerHeaders[2].textContent = t.footer.contact;
-document.querySelector('footer .text-center p').innerHTML = '&copy; 2024 Star Crude Oil. ' + t.footer.rights;
-// Update language indicator
-const langSpan = languageToggle.querySelector('span');
-const langImg = languageToggle.querySelector('img');
-if (lang === 'en') {
-langSpan.textContent = 'EN';
-langImg.src = 'https://readdy.ai/api/search-image?query=United%20States%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=us-flag2&orientation=landscape';
-langImg.alt = 'EN';
-} else if (lang === 'es') {
-langSpan.textContent = 'ES';
-langImg.src = 'https://readdy.ai/api/search-image?query=Spain%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=es-flag2&orientation=landscape';
-langImg.alt = 'ES';
-} else if (lang === 'pt') {
-langSpan.textContent = 'PT';
-langImg.src = 'https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=br-flag3&orientation=landscape';
-langImg.alt = 'PT';
-}
-}
-languageToggle.addEventListener('click', function(e) {
-e.stopPropagation();
-languageDropdown.classList.toggle('active');
-});
-document.addEventListener('click', function() {
-languageDropdown.classList.remove('active');
-});
-languageDropdown.addEventListener('click', function(e) {
-e.stopPropagation();
-const target = e.target.closest('a');
-if (target) {
-const langText = target.querySelector('span').textContent;
-if (langText === 'English') {
-translatePage('en');
-} else if (langText === 'Español') {
-translatePage('es');
-} else if (langText === 'Português') {
-translatePage('pt');
-}
-languageDropdown.classList.remove('active');
-}
-});
-});
-</script>
-<script id="smooth-scroll">
-document.addEventListener('DOMContentLoaded', function() {
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-e.preventDefault();
-const target = document.querySelector(this.getAttribute('href'));
-if (target) {
-target.scrollIntoView({
-behavior: 'smooth',
-block: 'start'
-});
-}
-});
-});
-});
 </body>
-
 </html>
-
